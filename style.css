@@ -1,0 +1,16 @@
+.subtitulo {
+    font-size: 13px;
+    opacity: 0.7;
+    margin-bottom: 4px;
+}
+.tag {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 8px;
+}
+.tag.sucesso { background-color: #2a6e1a; color: #d4f5c4; }
+.tag.ruim    { background-color: #7a1a1a; color: #f5c4c4; }
+.tag.medio   { background-color: #1a4a6e; color: #c4dff5; }

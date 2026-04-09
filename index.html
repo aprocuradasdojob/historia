@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Um dia na borracharia</title>
+</head>
+<body>
+    <main>
+        <!-- PASSO 0 - Início -->
+        <div class="passo ativo" id="passo-0">
+            <p class="subtitulo">🔧 Uma aventura na borracharia</p>
+            <p>Zé da Roda é o borracheiro mais famoso do bairro. Numa segunda-feira de manhã, três clientes chegam ao mesmo tempo com urgência. Quem Zé atende primeiro?</p>
+            <button class="btn-proximo" data-proximo="1">🚚 O caminhoneiro parado na rodovia há 2 horas</button>
+            <button class="btn-proximo" data-proximo="2">👩‍⚕️ A médica que precisa chegar ao hospital urgente</button>
+            <button class="btn-proximo" data-proximo="3">👋 O vizinho amigo de longa data</button>
+        </div>
+
+        <!-- PASSO 1 -->
+        <div class="passo" id="passo-1">
+            <p>Bom senso! O caminhoneiro estava parado na rodovia, lugar perigoso. Aliviado, ele paga bem e conta que tem uma carga de frutas para entregar. Zé ainda tem tempo para os outros. E agora?</p>
+            <button class="btn-proximo" data-proximo="4">🏥 Atender a médica em seguida</button>
+            <button class="btn-proximo" data-proximo="5">☕ Fazer um intervalo rápido para o café</button>
+        </div>
+
+        <!-- PASSO 2 -->
+        <div class="passo" id="passo-2">
+            <p>Zé troca dois parafusos rapidinho e a médica voa para o hospital. Ela agradece muito. Mas o caminhoneiro na rodovia ainda espera... Zé decide ir até lá.</p>
+            <button class="btn-proximo" data-proximo="6">🛣️ Ir de moto até o caminhão na rodovia</button>
+            <button class="btn-proximo" data-proximo="7">👨‍🔧 Mandar o ajudante Toninho</button>
+        </div>
+
+        <!-- PASSO 3 - Fim ruim -->
+        <div class="passo" id="passo-3">
+            <p class="tag ruim">Dia difícil 😟</p>
+            <p>Zé atendeu o amigo primeiro, mas os outros dois clientes foram embora. A médica foi a um concorrente e o caminhoneiro ficou preso na rodovia por horas. Profissionalismo significa atender quem tem mais urgência primeiro, mesmo sendo amigos.</p>
+            <button class="btn-proximo" data-proximo="0">🔄 Tentar de novo</button>
+        </div>
+
+        <!-- PASSO 4 - Fim ótimo -->
+        <div class="passo" id="passo-4">
+            <p class="tag sucesso">Dia excelente! 🌟</p>
+            <p>Zé corre para atender a médica antes que ela vá embora. Ela chega ao hospital a tempo e mais tarde volta para contar que um paciente foi salvo naquela manhã. O vizinho também foi atendido e saiu feliz. Boas decisões fazem a diferença na vida das pessoas!</p>
+            <button class="btn-proximo" data-proximo="0">🔄 Jogar novamente</button>
+        </div>
+
+        <!-- PASSO 5 - Fim médio -->
+        <div class="passo" id="passo-5">
+            <p class="tag medio">Dia razoável 😐</p>
+            <p>Zé parou para tomar um café, mas quando voltou a médica já tinha ido para outro borracheiro. A urgência do cliente vem antes do próprio café!</p>
+            <button class="btn-proximo" data-proximo="0">🔄 Tentar de novo</button>
+        </div>
+
+        <!-- PASSO 6 - Fim ótimo -->
+        <div class="passo" id="passo-6">
+            <p class="tag sucesso">Dia excelente! 🌟</p>
+            <p>Zé foi de moto até a rodovia com o equipamento nas costas. O caminhoneiro ficou impressionado com o atendimento e indicou a borracharia para toda a sua empresa de transporte. Novos clientes garantidos!</p>
+            <button class="btn-proximo" data-proximo="0">🔄 Jogar novamente</button>
+        </div>
+
+        <!-- PASSO 7 - Fim médio -->
+        <div class="passo" id="passo-7">
+            <p class="tag medio">Dia regular 😐</p>
+            <p>O ajudante Toninho ainda está aprendendo e demorou o dobro do tempo. O caminhoneiro ficou impaciente e deixou uma avaliação ruim nas redes sociais. Em situações críticas, o profissional experiente faz a diferença.</p>
+            <button class="btn-proximo" data-proximo="0">🔄 Tentar de novo</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
